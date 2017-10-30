@@ -4,9 +4,8 @@ import '../../css/recomendlist.css'
 import {Link} from 'react-router-dom'
 
 class RecomendList extends React.Component {
-  constructor () {
-    super()
-    console.log('eeeee')
+  constructor (props) {
+    super(props)
     this.state={
       recomendList: []
     }
@@ -43,6 +42,7 @@ class RecomendList extends React.Component {
     }
   }
   render () {
+    console.log(this.props)
     let list = this.doit()
     return (
       <ul className='rlist'>

@@ -3,19 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
-import {BrowserRouter as Router, Route} from 'react-router-dom'
-import PlaySong from './components/PlaySong.js'
-class Index extends React.Component {
-  render () {
-    return (
-      <Router>
-        <div>
-          <Route  exact path='/' component={App}/>
-          <Route  path='/playsong/:id' component={PlaySong}/>
-        </div>
-      </Router>
-    )
-  }
-}
-ReactDOM.render(<Index />, document.getElementById('root'));
+
+ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();

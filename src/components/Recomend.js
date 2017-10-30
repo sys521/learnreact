@@ -4,6 +4,7 @@ import '../css/recomend.css'
 import NewList from './recomend/NewList'
 class Recomend extends React.Component {
   render () {
+    console.log(this.props)
     return (
       <div className='recomend'>
         <div className='r-header'>推荐音乐</div>

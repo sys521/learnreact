@@ -3,7 +3,7 @@ import React from 'react'
 class Find extends React.Component {
   render () {
     console.log(this.props)
-    return <div>hot</div>
+    return <div>find</div>
   }
 }
 

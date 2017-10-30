@@ -12,9 +12,10 @@ class Topbar extends React.Component {
   }
   render () {
     let menuItem = this.props.menu.map( (e, i) => {
+      console.log(e.url)
       return (
       <li className={e.border === true ? "menu-item border": "menu-item"} key={i} onClick={this.addBorder.bind(this,e,i)}>
-        <Link to={'/'+e.url} className='link'>{e.title}</Link> 
+        <Link to={`/${e.url}`} className='link'>{e.title}</Link> 
       </li>
       )
     })
