@@ -1,0 +1,21 @@
+* {
+  margin:0;
+  padding:0;
+}
+
+.rlist {
+  list-style:none;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
+  font-size:12px;
+}
+.rlist-item {
+  width:30%;
+  text-decoration: none;
+  color:black;
+}
+.rlist-item img {
+  width:100%;
+  height:auto;
+}
