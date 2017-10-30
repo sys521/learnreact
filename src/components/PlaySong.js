@@ -5,7 +5,7 @@ class PlaySong extends React.Component {
   }
   render() {
     return (
-      <div>xxx</div>
+      <div>playsong</div>
     )
   }
 }

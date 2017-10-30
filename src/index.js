@@ -10,8 +10,8 @@ class Index extends React.Component {
     return (
       <Router>
         <div>
-          <Route path='/' component={App}/>
-          <Route exact path='/playsong/:id' component={PlaySong}/>
+          <Route  exact path='/' component={App}/>
+          <Route  path='/playsong/:id' component={PlaySong}/>
         </div>
       </Router>
     )

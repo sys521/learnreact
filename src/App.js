@@ -2,15 +2,11 @@ import React, { Component } from 'react';
 import './App.css';
 import Topbar from './components/Topbar.js'
 import {
-  BrowserRouter as Router,
   Route,
-  Switch
 } from 'react-router-dom'
 import Hot from './components/Hot.js'
-import Recomend from './components/Recomend'
-const Find = () =>{
-  return <div>Find</div>
-}
+import Recomend from './components/Recomend.js'
+import Find from './components/Find.js'
 
 class App extends Component {
   constructor (props) {
