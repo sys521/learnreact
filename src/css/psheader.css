@@ -1,0 +1,44 @@
+.pointer {
+  position:relative;
+  height:8vh;
+}
+.pointer img  {
+  width:22vw;
+  height:auto;
+  position:absolute;
+  left:50%;
+  transform:translate(-50%);
+  z-index:40;
+}
+.roude {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:relative;
+}
+.roude-bottom {
+  width:80vw;
+  height:auto;
+  z-index:30;
+}
+.roude-middle {
+  position:absolute;
+  width:80vw;
+  height:auto;
+  z-index:20;
+}
+.roude-top {
+  position:absolute;
+  width:50vw;
+  height:auto;
+  z-index:1;
+  animation:circle 6s 0s infinite linear;
+}
+@keyframes circle {
+  0% {
+    transform:rotate(0deg)
+  }
+  100% {
+    transform:rotate(360deg)
+  }
+}

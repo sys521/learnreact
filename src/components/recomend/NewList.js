@@ -30,11 +30,15 @@ class NewList extends React.Component {
     if(this.state.newList.length){
       let newlist = this.state.newList.map((e,i) => {
         return (
-          <li key={i} className="newlist-item">{e.name}</li>
+          <li key={i} className="newlist-item" onClick={this.goPlay.bind(this,e.id)}>{e.name}</li>
         )
       })
       return newlist
     }
+  }
+  goPlay (id) {
+    let url = '/playsong/' + id
+    this.props.changeRouter.call(this,url) 
   }
   render () {
     return (
